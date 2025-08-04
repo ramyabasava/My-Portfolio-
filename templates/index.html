@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramya Basava | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="#home"><JD /></a>
+        </div>
+        <nav class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certs">Certifications</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <h1>Ramya Basava</h1>
+            <p>Final Year CSE Student & <span class="gradient-underline">Full Stack Developer && ServiceNow Administrator and ServiceNow Developer</span></p>
+            <a href="#about" class="scroll-down-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 20L12 4" stroke="#64ffda" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M18 14L12 20L6 14" stroke="#64ffda" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="{{ url_for('static', filename='images/about-me2.jpg') }}" alt="Basava Ramya">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm Ramya Basava, a passionate and dedicated Final-year Computer Science Engineering student with a strong flair for creating beautiful, functional, and user-centric digital experiences.</p>
+                    <p>My journey in tech is driven by a curiosity for how things work and a desire to solve real-world problems. From crafting robust back-end systems to designing intuitive front-end interfaces, I love bringing ideas to life.</p>
+                    <p>Currently, I'm diving deep into AI-driven development tools and decentralized technologies, always eager to learn and apply the next big thing in software engineering.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="section-title">My Skillset</h2>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="devicon-python-plain colored"></i> Python</div>
+                <div class="skill-card"><i class="devicon-html5-plain colored"></i> HTML</div>
+                <div class="skill-card"><i class="devicon-react-original colored"></i> React</div>
+                <div class="skill-card"><i class="devicon-nodejs-plain colored"></i> Node.js</div>
+                <div class="skill-card"><i class="devicon-tailwindcss-plain colored"></i> TailwindCSS</div>
+                <div class="skill-card"><i class="devicon-flask-plain colored"></i> Flask</div>
+                <div class="skill-card"><i class="devicon-mysql-plain-wordmark colored"></i> MySQL</div>
+                <div class="skill-card"><i class="devicon-git-plain colored"></i> Git</div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+               <div class="project-card" style="background-image: url('/static/images/project-1.png');">
+                    <div class="project-content">
+                        <h3> Library Management System (LMS)</h3>
+                        <p>A Web-based Library Management System aimed at automating and streamlining all core library operations. The system includes book inventory control, member management, issue/return tracking, fine calculation, and reporting.</p>
+                        <div class="project-tags">
+                            <span>HTML,CSS</span><span>Flask</span><span>Sqlite</span><span>VSCode</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ramyabasava/Library_Management_Application-.git" class="link">GitHub</a>
+                            <a href="https://library-management-application-nx5d.onrender.com" class="btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" style="background-image: url('/static/images/project-2.png');">
+                     <div class="project-content">
+                        <h3>Ticket Booking Application</h3>
+                        <p>After weeks of learning and building, I'm proud to share a fully functional Ticket Booking System that I developed from scratch using a full-stack.</p>
+                        <div class="project-tags">
+                            <span>Flask</span><span>HTML,CSS</span><span>Mysql</span><span>Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ramyabasava/Ticket_Booking_Application.git" class="link">GitHub</a>
+                            <a href="https://ticket-booking-application-phsj.onrender.com" class="btn-primary">Live Demo</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" style="background-image: url('/static/images/project-3.png');">
+                     <div class="project-content">
+                        <h3>Sara Home Services</h3>
+                        <p>A full-stack web application built with Flask and React to manage and streamline home service bookings.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>Flask</span><span>MySQL</span><span>Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ramyabasava/Sara-Home-Services--Frontend.git" class="link">GitHub-Frontend Link</a>
+                            <a href="https://github.com/ramyabasava/Sara-Home-Services---Backend.git" class="link">GitHub-Backend Link</a>
+                            <a href="https://sara-home-services.onrender.com" class="btn-primary">Live Demo-Frontend</a>
+                            <a href="https://sara-home-services-backend.onrender.com" class="btn-primary">Live Demo-Backend</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" style="background-image: url('/static/images/project-4.png');">
+                     <div class="project-content">
+                        <h3>Calculating Family Expenses using ServiceNow</h3>
+                        <p>This simplifies budgeting by automating expense tracking and reporting. It provides a centralized platform for managing and analyzing family finances efficiently.</p>
+                        <div class="project-tags">
+                            <span>ServiceNow Instance</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ramyabasava/Calculating-Family-Expenses-using-Service-Now.git" class="link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certs">
+    <h2 class="section-title">Certifications</h2>
+    <div class="cert-list">
+
+        <div class="cert-item">
+            <div class="cert-header">
+                <div>
+                    <h4>Goggle AI-ML Virtual Internship (JAN - MAR 2025) </h4>
+                </div>
+                <span>→</span>
+            </div>
+            <div class="certificate-image-container">
+                <img src="{{ url_for('static', filename='images/cert-1.png') }}" alt="Google AI-ML Certificate">
+            </div>
+        </div>
+
+        <div class="cert-item">
+            <div class="cert-header">
+                <div>
+                    <h4>ServiceNow Administration  Virtual Internship  by Smart Bridge (May-June 2025)</h4>
+                </div>
+                <span>→</span>
+            </div>
+            <div class="certificate-image-container">
+                <img src="{{ url_for('static', filename='images/cert-2.png') }}" alt="Internship Certificate">
+            </div>
+        </div>
+        
+        <div class="cert-item">
+            <div class="cert-header">
+                <div>
+                    <h4>Certified ServiceNow System Administration</h4>
+                </div>
+                <span>→</span>
+            </div>
+            <div class="certificate-image-container">
+                <img src="{{ url_for('static', filename='images/cert-3.png') }}" alt="CSA Certificate">
+            </div>
+        </div>
+
+        <div class="cert-item">
+            <div class="cert-header">
+                <div>
+                    <h4>Certified ServiceNow Application Developer</h4>
+                </div>
+                <span>→</span>
+            </div>
+            <div class="certificate-image-container">
+                <img src="{{ url_for('static', filename='images/cert-4.png') }}" alt="CAD Certificate">
+            </div>
+        </div>
+
+    </div>
+</section>
+        
+        <!-- Resume Section -->
+        <section id="resume" class="centered-section">
+            <h2 class="section-title">My Resume</h2>
+            <p>Interested in the full story? My resume contains more details about my experience,<br>education, and technical skills. Download it to learn more.</p>
+            <a href="{{ url_for('static', filename='images/Basava-Resume.pdf') }}" download class="btn-gradient">Download Resume</a>
+        </section>
+
+        <!-- In templates/index.html -->
+
+        <!-- Contact Section -->
+        <section id="contact" class="centered-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>I'm currently seeking new opportunities and am open to collaborations. Feel free to<br>reach out!</p>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-gradient">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+    
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <footer class="site-footer">
+        <div class="social-links">
+            <a href="https://github.com/ramyabasava" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ramya-basava-ab5b0b36b" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://instagram.com/your-username" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <div class="footer-email">
+            <a href="ramyabasava6@gmail.com">ramyabasava6@gmail.com</a>
+        </div>
+        <div class="footer-credit">
+            <p>Designed & Built by Ramya Basava</p>
+        </div>
+    </footer>
+</body>
+</html>
